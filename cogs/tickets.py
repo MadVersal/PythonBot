@@ -1,3 +1,6 @@
+# Zuriel V. Alejandro
+# All rigths reserved
+# Whit love ♥️.
 from discord.ext import commands
 import discord
 from datetime import datetime
@@ -19,7 +22,7 @@ class CreateTicketModal(discord.ui.Modal, title="Crear Ticket"):
     )
 
     async def on_submit(self, interaction: discord.Interaction):
-        # Obtener el cog de tickets
+        
         tickets_cog = interaction.client.get_cog("Tickets")
         if tickets_cog:
             await tickets_cog.create_ticket(interaction, str(self.reason))
@@ -66,7 +69,7 @@ class Tickets(commands.Cog):
         await ctx.send(embed=embed, view=view)
 
     async def create_ticket(self, interaction: discord.Interaction, reason: str):
-        """Crea un nuevo ticket de soporte"""
+        """Crea un nuevo ticket"""
         category = discord.utils.get(interaction.guild.categories, name=self.support_category_name)
         if not category:
             return await interaction.response.send_message(
@@ -118,16 +121,16 @@ class Tickets(commands.Cog):
         view.add_item(CloseButton())
         await ticket_channel.send(embed=embed, view=view)
         await ticket_channel.send(f"{interaction.user.mention} Bienvenido a tu ticket. Un staff te atenderá pronto.")
-        await interaction.response.send_message(f"✅ Tu ticket ha sido creado en {ticket_channel.mention}", ephemeral=True)
+        await interaction.response.send_message(f"Tu ticket ha sido creado en {ticket_channel.mention}", ephemeral=True)
 
     @commands.command()
     async def close(self, ctx):
         """Cierra un ticket"""
         if not ctx.channel.name.startswith("ticket-"):
-            return await ctx.send("❌ Este comando solo puede usarse en canales de ticket.")
+            return await ctx.send("Este comando solo puede usarse en canales de ticket.")
         
         if not (ctx.author.guild_permissions.administrator or ctx.channel.permissions_for(ctx.author).read_messages):
-            return await ctx.send("❌ No tienes permiso para cerrar este ticket.")
+            return await ctx.send("No tienes permiso para cerrar este ticket.")
 
         await ctx.send("Cerrando ticket en 5 segundos...")
         await discord.utils.sleep_until(datetime.now().timestamp() + 5)
@@ -137,3 +140,6 @@ async def setup(bot):
     cog = Tickets(bot)
     await bot.add_cog(cog)
     print("[DEBUG] Cog Tickets cargado y comandos de tickets registrados.")
+# Zuriel V. Alejandro
+# All rigths reserved
+# Whit love ♥️.
