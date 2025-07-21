@@ -1,3 +1,6 @@
+# Zuriel V. Alejandro
+# All rigths reserved
+# Whit love ♥️.
 from discord.ext import commands
 import discord
 import requests
@@ -59,3 +62,6 @@ async def setup(bot):
     cog = Players(bot)
     await bot.add_cog(cog)
     print("[DEBUG] Cog Players cargado y comando !players registrado.")
+# Zuriel V. Alejandro
+# All rigths reserved
+# Whit love ♥️.
