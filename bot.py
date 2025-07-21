@@ -33,7 +33,6 @@ async def main():
     await bot.load_extension('cogs.botinfo')
     await bot.load_extension('cogs.uptime')
     await bot.load_extension('cogs.avatar')
-    await bot.load_extension('cogs.dado')
     await bot.load_extension('cogs.userinfo')
     await bot.load_extension('cogs.players')
     await bot.load_extension('cogs.tickets')
