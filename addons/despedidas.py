@@ -1,3 +1,6 @@
+# Zuriel V. Alejandro
+# All rigths reserved
+# Whit love ♥️.
 from discord.ext import commands
 import discord
 
@@ -80,3 +83,6 @@ async def setup(bot):
     cog = Despedidas(bot)
     await bot.add_cog(cog)
     print("[DEBUG] Sistema de Despedidas cargado.")
+# Zuriel V. Alejandro
+# All rigths reserved
+# Whit love ♥️.
