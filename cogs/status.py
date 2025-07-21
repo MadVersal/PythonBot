@@ -57,3 +57,6 @@ async def setup(bot):
     cog = Status(bot)
     await bot.add_cog(cog)
     print("[DEBUG] Cog Status cargado y comando !status registrado.")
+# Zuriel V. Alejandro
+# All rigths reserved
+# Whit love ♥️.
