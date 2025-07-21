@@ -12,7 +12,7 @@ class Info(commands.Cog):
     async def info(self, ctx):
         """Muestra información básica del bot"""
         embed = discord.Embed(title="Información", color=discord.Color.purple())
-        embed.add_field(name="Sobre el Bot", value="Soy un bot de ejemplo hecho con discord.py", inline=False)
+        embed.add_field(name="Sobre el Bot", value="Soy un bot de minecraft hecho por @MadVersal usando discord.py", inline=False)
         embed.add_field(name="Servidor Minecraft", value="IP: `play.legacymc.lat:19132`", inline=False)
         embed.set_footer(text="@MadVersal 2025")
         await ctx.send(embed=embed)
