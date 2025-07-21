@@ -14,7 +14,7 @@ class Ayuda(commands.Cog):
     @commands.command()
     async def ayuda(self, ctx):
         """Muestra los comandos básicos disponibles xd"""
-        embed = discord.Embed(title="Ayuda", description='Comandos disponibles: !hola, !info, !ayuda, !status, !players, !ip, !avatar, !dado, !userinfo, !tickets, !serverinfo, !botinfo, !uptime, !bienvenida, !despedida', color=discord.Color.purple())
+        embed = discord.Embed(title="Ayuda", description='Comandos disponibles: !hola, !info, !ayuda, !status, !players, !ip, !avatar, !dado, !userinfo, !tickets, !serverinfo, !botinfo, !uptime, !bienvenida, !despedida y !say', color=discord.Color.purple())
         embed.set_footer(text="@MadVersal 2025")
         await ctx.send(embed=embed)
 
