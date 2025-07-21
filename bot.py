@@ -1,3 +1,6 @@
+# Zuriel V. Alejandro
+# All rigths reserved
+# Whit love ♥️.
 import discord
 from discord.ext import commands        
 
