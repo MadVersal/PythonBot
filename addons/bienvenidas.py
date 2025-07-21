@@ -1,10 +1,13 @@
+# Zuriel V. Alejandro
+# All rigths reserved
+# Whit love ♥️.
 from discord.ext import commands
 import discord
 
 class Bienvenidas(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
-        self.welcome_channels = {}  # guild_id: channel_id
+        self.welcome_channels = {}
 
     @commands.group(invoke_without_command=True)
     @commands.has_permissions(administrator=True)
@@ -78,6 +81,9 @@ class Bienvenidas(commands.Cog):
         await self.send_welcome_message(member, member.guild)
 
 async def setup(bot):
-    cog = Bienvenidas(bot)
+    cog = Bienvenidas(bot) # Borren pmmp ya xdxdxd
     await bot.add_cog(cog)
     print("[DEBUG] Sistema de Bienvenidas cargado.")
+# Zuriel V. Alejandro
+# All rigths reserved
+# Whit love ♥️.
