@@ -20,6 +20,7 @@ class Bienvenidas(commands.Cog):
                        "`!bienvenida test` - Prueba el mensaje de bienvenida\n"
                        "`!bienvenida disable` - Desactiva las bienvenidas",
             color=discord.Color.green()
+            embed.set_footer(text="@MadVersal 2025")
         )
         await ctx.send(embed=embed)
 
