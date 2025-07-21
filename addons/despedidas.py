@@ -7,7 +7,7 @@ import discord
 class Despedidas(commands.Cog):
     def __init__(self, bot):
         self.bot = bot
-        self.goodbye_channels = {}  # guild_id: channel_id
+        self.goodbye_channels = {} 
 
     @commands.group(invoke_without_command=True)
     @commands.has_permissions(administrator=True)
