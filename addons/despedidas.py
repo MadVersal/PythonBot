@@ -20,6 +20,7 @@ class Despedidas(commands.Cog):
                        "`!despedida test` - Prueba el mensaje de despedida\n"
                        "`!despedida disable` - Desactiva las despedidas",
             color=discord.Color.orange()
+            embed.set_footer(text="@MadVersal 2025")
         )
         await ctx.send(embed=embed)
 
@@ -64,7 +65,7 @@ class Despedidas(commands.Cog):
             return
 
         embed = discord.Embed(
-            title="¡Hasta luego!",
+            title="Hasta luego!",
             description=f"**{member.name}** ha abandonado el servidor.",
             color=discord.Color.orange()
         )
@@ -76,12 +77,12 @@ class Despedidas(commands.Cog):
 
     @commands.Cog.listener()
     async def on_member_remove(self, member):
-        """Evento cuando un miembro abandona el servidor"""
+        """Cuando un miembro abandona el servidor"""
         await self.send_goodbye_message(member, member.guild)
 
 async def setup(bot):
     cog = Despedidas(bot)
-    await bot.add_cog(cog)
+    await bot.add_cog(cog) # Algun dia slfav dejara de ser tan pendejo? jejejejej
     print("[DEBUG] Sistema de Despedidas cargado.")
 # Zuriel V. Alejandro
 # All rigths reserved
