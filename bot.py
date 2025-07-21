@@ -38,6 +38,7 @@ async def main():
     await bot.load_extension('cogs.players')
     await bot.load_extension('cogs.tickets')
     await bot.load_extension('cogs.ip')
+    await bot.load_extension('cogs.say')
     
     await bot.load_extension('addons.bienvenidas')
     await bot.load_extension('addons.despedidas')
@@ -45,3 +46,6 @@ async def main():
 
 if __name__ == '__main__':
     asyncio.run(main())
+# Zuriel V. Alejandro
+# All rigths reserved
+# Whit love ♥️.
