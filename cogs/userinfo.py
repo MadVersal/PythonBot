@@ -1,3 +1,6 @@
+# Zuriel V. Alejandro
+# All rigths reserved
+# Whit love ♥️.
 from discord.ext import commands
 import discord
 import datetime
