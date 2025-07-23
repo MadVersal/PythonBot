@@ -31,7 +31,7 @@ class Bienvenidas(commands.Cog):
         self.welcome_channels[ctx.guild.id] = channel.id
         embed = discord.Embed(
             description=f"Canal de bienvenidas establecido en {channel.mention}",
-            color=discord.Color.green()
+            #color=discord.Color.green()
         )
         await ctx.send(embed=embed)
 
