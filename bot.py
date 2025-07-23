@@ -13,6 +13,9 @@ bot = commands.Bot(command_prefix='!', intents=intents)
 
 @bot.event
 async def on_ready():
+    await bot.change_presence(
+    status=discord.Status.online,
+  activity=discord.Game(name="play.legacymc.lat:19132"))
     print(f'Bot conectado como {bot.user}')
     print("[DEBUG] Comandos registrados:")
     for command in bot.commands:
