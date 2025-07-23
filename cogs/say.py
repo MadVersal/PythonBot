@@ -9,6 +9,7 @@ class Say(commands.Cog):
         self.bot = bot
 
     @commands.command(name="say", help="Repite el mensaje que escribas.")
+    @commands.has_permissions(administrator=True)
     async def say(self, ctx: commands.Context, *, message: str = None):
         if message is None:
             await ctx.send("Debes escribir un mensaje para que lo repita")
