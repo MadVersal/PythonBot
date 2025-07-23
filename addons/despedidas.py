@@ -17,10 +17,10 @@ class Despedidas(commands.Cog):
             title="Sistema de Despedidas",
             description="**Comandos disponibles:**\n"
                        "`!despedida canal #canal` - Establece el canal de despedidas\n"
-                       "`!despedida test` - Prueba el mensaje de despedida\n",
+                       "`!despedida test` - Prueba el mensaje de despedida\n"
                        "`!despedida disable` - Desactiva las despedidas",
             color=discord.Color.orange()
-            embed.set_footer(text="@MadVersal 2025")
+            
         )
         await ctx.send(embed=embed)
 
